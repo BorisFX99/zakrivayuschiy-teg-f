@@ -1,1 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --header-inline-size: clamp(23.4375rem, 0rem + 100vw, 43.75rem);
+  --header-block-size: clamp(20.4375rem, 17.4808rem + 12.6154vw, 23rem);
+  --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --card-inline-size: clamp(23.4375rem, 0rem + 100vw, 43.75rem);
+  --save-button-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  --save-button-block-size: clamp(
+    55px,
+    55px + (1440px - 100vw) * (29/1065),
+    84px
+  );
+  --save-button-image-size: clamp(
+    21px,
+    21px + (1440px - 100vw) * (7/1065),
+    28px
+  );
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --main-color: #000;
+  --light-color: #fff;
+  --accent-color: #000;
+  --main-font-size: 18px;
+  --article-text-weight: 400;
+  --article--title-weight: 700;
+  --contour-color: #000;
+  --animation-fill-color: #f00;
+}
