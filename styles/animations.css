@@ -13,6 +13,7 @@
 /* scale heart */
 
 @keyframes scale {
+
   to {
     transform: scale(1.25);
   }
@@ -21,6 +22,7 @@
 /* sparks */
 
 @keyframes sparks {
+
   to {
     opacity: 1;
   }
