@@ -350,15 +350,6 @@ button:focus {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-/*
-Я пока не знаю как иначе сделать плавное появление и исчезновение
-окна dialog, ведь он резко переходит из состояния display:none в видимое и обратно.
-(читал способ на Доке https://doka.guide/css/starting-style/)
-
-Пэтому брал состояние .dialog:not([open] {  opacity: 0;} как начальной точки отсчета
-чтобы работал transition.
-Чтобы плавно появлялся и плавно исчезал. Javascript мы еще не проходили */
-
 /* стили для открытого диалога (для экрана 375px другой padding задан)*/
 
 .dialog[open] {
@@ -368,7 +359,7 @@ button:focus {
   padding: 30px;
 }
 
-/* стили диалога без .dialog[open] чтобы при закрытии не прервалась transition */
+/* стили диалога без состояния .dialog[open] чтобы при закрытии не прервалась transition */
 
 .dialog {
   opacity: 1;
@@ -388,7 +379,7 @@ button:focus {
   }
 }
 
-/* стили для закрывающегося диалога */
+/* стили для закрывающегося диалога (для экрана 375px другой padding задан)*/
 
 dialog:not([open]) {
   opacity: 0;
@@ -429,6 +420,10 @@ dialog:not([open]) {
     right: 3%;
   }
 
+.dialog:not([open]) {
+    padding: 30px 40px;
+  }
+
   .dialog[open] {
     padding: 30px 40px;
   }
@@ -456,4 +451,3 @@ dialog:not([open]) {
     transition: none;
   }
 }
-
